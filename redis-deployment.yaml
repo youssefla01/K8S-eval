@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: redis-youssef
+  labels:
+    app: redis-youssef
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: redis-youssef
+  template:
+    metadata:
+      labels:
+        app: redis-youssef
+    spec:
+      containers:
+        - name: redis-youssef
+          image: redis
+          ports:
+            - containerPort: 6379
