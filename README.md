@@ -8,4 +8,4 @@ les services et les pods se sont bien lancés en utilisant les commandes "kubect
 
 
 Pour vérifier la communication entre mes services, j'ai exécuté la commande "kubectl get services", 
-copié l'adresse IP externe suivie du port, puis collé cette URL dans mon navigateur. Dans mon cas, l'URL était http://37.59.31.40:6379/.
+copié l'adresse IP externe suivie du port, puis collé cette URL dans mon navigateur. Dans mon cas, l'URL était http://37.59.31.44:6379/.
