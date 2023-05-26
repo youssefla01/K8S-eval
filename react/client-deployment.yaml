@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: front-youssef
+  labels:
+    app: front-youssef
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: front-youssef
+  template:
+    metadata:
+      labels:
+        app: front-youssef
+    spec:
+      imagePullSecrets:
+        - name: mysecret
+      containers:
+        - name: front
+          image: cloud.canister.io:5000/youssef/front:front
